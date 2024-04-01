@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERIFICADOR DE IDADE</title>
+    <link rel="stylesheet" href="style1.css"> 
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p> Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas"> Masculino</label>
+                <input type="radio" name="radsex" id="fem"> <!--radios precisam ter o mesmo nome para q possa marcar um ou outro-->
+                <label for="fem"> Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+
+        <div id="res">
+            Mensagem
+            <!-- Add imagem por HTML:
+            <img src="bebe_mulher.png" alt="" id="img"> -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy;LiviaCavalcante</p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>
+
